@@ -4,8 +4,6 @@ describe('Iteration Challenges', () => {
     it('push the numbers from 1 up to ( and including ) 20 into items', () => {
 
         const items = [];
-
-        // your loop here...
         for (let i = 1; i <= 20; i++) {
             items.push(i);
         }
@@ -14,10 +12,7 @@ describe('Iteration Challenges', () => {
     });
 
     it('push the even numbers from 0 up to ( and including ) 14 into items', () => {
-
         const items = [];
-
-        // your loop here ...
         for (let i = 0; i <= 14; i++) {
             if (i % 2 === 0) {
                 items.push(i);
@@ -30,8 +25,6 @@ describe('Iteration Challenges', () => {
     it('push the multiples of 5 from 10 to 100 ( inclusive ) in ascending order into items', () => {
 
         const items = [];
-
-        // your loop here ...
         for (let i = 10; i <= 100; i++) {
             if (i % 5 === 0) {
                 items.push(i);
@@ -44,8 +37,6 @@ describe('Iteration Challenges', () => {
     it('push the numbers from 42 down to ( and including ) 3 in descending order into items', () => {
 
         const items = [];
-
-        // your loop here...
         for (let i = 3; i <= 42; i++) {
             items.push(i)
         }
@@ -60,8 +51,6 @@ describe('Iteration Challenges', () => {
 
         const sounds = ['fizz', 'buzz', 'bang', 'crash', 'wallop'];
         const exclaimedSounds = [];
-
-        // your loop here...
         for (let i = 0; i < sounds.length; i++) {
             exclaimedSounds.push(sounds[i] + "!")
         }
@@ -74,8 +63,6 @@ describe('Iteration Challenges', () => {
 
         const tutors = ['Anat', 'Paul C', 'Paul R', 'Jonny', 'Mitch', 'Vel', 'Alex', 'Ant']
         const tutorsAndIndex = [];
-
-        // your loop here...
         for (let i = 0; i < tutors.length; i++) {
             tutorsAndIndex.push(i + " : " + tutors[i]);
         }
@@ -87,8 +74,6 @@ describe('Iteration Challenges', () => {
 
         const tutors = ['Angela', 'Anne', 'Elizabeth', 'Julie', 'Mo', 'Barbara'];
         const tutorsOverLength5 = [];
-
-        // your loop here...
         for (let i = 0; i < tutors.length; i++) {
             if (tutors[i].length > 5) {
                 tutorsOverLength5.push(tutors[i])
@@ -101,8 +86,6 @@ describe('Iteration Challenges', () => {
     it('update a variable **total** to get the total of adding all the numbers from 1 to 50', () => {
 
         let total = 0;
-
-        // your loop here...
         for (let i = 0; i <= 50; i++) {
             total += i;
         }
@@ -114,8 +97,6 @@ describe('Iteration Challenges', () => {
 
         let checkList = '';
         const items = ['apple', 'banana', 'pear', 'orange'];
-
-        // your loop here...
         for (let i = 0; i < items.length; i++) {
             if (i + 1 === items.length) {
                 checkList += ' and ' + items[i];
@@ -133,8 +114,6 @@ describe('Iteration Challenges', () => {
 
         const list = ['hello', 'random', 3, true, false, '!', true, 1990, 'boom'];
         const stringsOnly = [];
-
-        // your loop here...
         for (let i = 0; i < list.length; i++) {
             if (typeof list[i] === "string") {
                 stringsOnly.push(list[i])
@@ -149,8 +128,6 @@ describe('Iteration Challenges', () => {
 
         const normalWords = ['I', 'am', 'learning', 'how', 'to', 'code'];
         const upperCaseWords = [];
-
-        // your loop here ...
         for (let i = 0; i < normalWords.length; i++) {
             upperCaseWords.push(normalWords[i].toUpperCase())
         }
@@ -175,7 +152,6 @@ describe('Iteration Challenges', () => {
         ];
 
         const staffOverOrAt28 = [];
-        // your loop here...
         for (let i = 0; i < staff.length; i++) {
             if (staff[i].age >= 28) {
                 staffOverOrAt28.push(staff[i].name)
