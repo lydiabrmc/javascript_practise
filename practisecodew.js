@@ -20,3 +20,9 @@ function basicOp(operation, value1, value2) {
         return value1 / value2;
     }
 }
+
+// reverse individual words in string without changing the order of words
+
+function reverseWords(str) {
+    return str.split("").reverse().join("").split(" ").reverse().join(" ")
+}
