@@ -111,3 +111,10 @@ function getSum(a, b) {
         return total;
     }
 }
+
+// list filtering (Filter numbers out of an array)
+
+function filter_list(l) {
+    let numbers = l.filter((item) => typeof item === 'number');
+    return numbers;
+}
