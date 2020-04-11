@@ -52,3 +52,9 @@ function isDivisible(n, x, y) {
         return false;
     }
 }
+
+// function greet return hello world
+
+function greet() {
+    return "hello world!";
+}
