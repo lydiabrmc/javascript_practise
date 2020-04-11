@@ -58,3 +58,21 @@ function isDivisible(n, x, y) {
 function greet() {
     return "hello world!";
 }
+
+// counting duplicates 
+
+function duplicateCount(text) {
+    let result = 0,
+        duplicates = {};
+    text.toLowerCase().split('').map(str => {
+        if (!duplicates.hasOwnProperty(str)) {
+            duplicates[str] = 0;
+        } else {
+            if (duplicates[str] === 0) {
+                result += 1;
+            }
+            duplicates[str] = duplicates[str] + 1;
+        }
+    });
+    return result;
+}
