@@ -36,3 +36,9 @@ const countSheep = function (num) {
     }
     return result;
 }
+
+// string to array
+
+function stringToArray(string) {
+    return string.split(' ');
+}
