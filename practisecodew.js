@@ -42,3 +42,13 @@ const countSheep = function (num) {
 function stringToArray(string) {
     return string.split(' ');
 }
+
+// Is n divisible by x and y?
+
+function isDivisible(n, x, y) {
+    if (n % x === 0 && y % y === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
