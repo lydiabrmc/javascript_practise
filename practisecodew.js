@@ -118,3 +118,9 @@ function filter_list(l) {
     let numbers = l.filter((item) => typeof item === 'number');
     return numbers;
 }
+
+//maximum multiple 
+
+function maxMultiple(divisor, bound) {
+    return bound - bound % divisor
+}
