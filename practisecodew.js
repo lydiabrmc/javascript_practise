@@ -26,3 +26,13 @@ function basicOp(operation, value1, value2) {
 function reverseWords(str) {
     return str.split("").reverse().join("").split(" ").reverse().join(" ")
 }
+
+// if you can't sleep, count sheep
+
+const countSheep = function (num) {
+    let result = '';
+    for (let i = 1; i <= num; i++) {
+        result += i.toString() + ' sheep...';
+    }
+    return result;
+}
