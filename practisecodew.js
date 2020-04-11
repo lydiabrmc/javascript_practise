@@ -128,7 +128,7 @@ function maxMultiple(divisor, bound) {
 // count the divisors of a number 
 
 function getDivisorsCnt(n) {
-    for (var d = 0, i = n; i > 0; i--) {
+    for (let d = 0, i = n; i > 0; i--) {
         if (n % i == 0) d++;
     }
 
