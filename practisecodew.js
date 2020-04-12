@@ -134,3 +134,10 @@ function getDivisorsCnt(n) {
 
     return d;
 }
+
+// remove spaces from string 
+
+function noSpace(x) {
+    return x.split(' ').join('')
+}
+
