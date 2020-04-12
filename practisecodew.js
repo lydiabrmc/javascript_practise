@@ -128,7 +128,7 @@ function maxMultiple(divisor, bound) {
 // count the divisors of a number 
 
 function getDivisorsCnt(n) {
-    for (let d = 0, i = n; i > 0; i--) {
+    for (var d = 0, i = n; i > 0; i--) {
         if (n % i == 0) d++;
     }
 
@@ -306,3 +306,11 @@ var greet = function (name) {
     const capName = lowName.charAt(0).toUpperCase() + lowName.slice(1);
     return "Hello " + capName + "!";
 };
+
+// caffeine script 
+function caffeineBuzz(n) {
+    if (n % 12 === 0) return "CoffeeScript";
+    if (n % 6 === 0) return "JavaScript";
+    if (n % 3 === 0) return "Java";
+    return "mocha_missing!";
+}
