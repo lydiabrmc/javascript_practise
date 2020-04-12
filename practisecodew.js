@@ -250,5 +250,12 @@ function songDecoder(song) {
         }
     }
     return decoded.join(" ");
-
 }
+
+// sort array by word length
+
+function sortByLength(array) {
+    return array.sort(function (a, b) {
+        return a.length - b.length;
+    })
+};
