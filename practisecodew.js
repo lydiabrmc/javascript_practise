@@ -204,3 +204,9 @@ function isSortedAndHow(array) {
 function spinWords(string) {
     return string.replace(/\w{5,}/g, function (w) { return w.split('').reverse().join('') })
 }
+
+//descending order 
+
+function descendingOrder(n) {
+    return parseInt(String(n).split('').sort().reverse().join(''))
+}
