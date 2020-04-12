@@ -238,3 +238,17 @@ function getMiddle(s) {
         return s[Math.floor(s.length / 2)];
     }
 }
+
+// dubstep
+
+function songDecoder(song) {
+    let decoded = [];
+    let str = song.split("WUB");
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] !== "") {
+            decoded.push(str[i]);
+        }
+    }
+    return decoded.join(" ");
+
+}
