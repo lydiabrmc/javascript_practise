@@ -183,3 +183,18 @@ function SeriesSum(n) {
 function addBinary(a, b) {
     return (a + b).toString(2)
 }
+
+// Sorted? yes? no? how?
+
+function isSortedAndHow(array) {
+    let sorted = array.slice().sort((a, b) => a - b);
+    let descendArr = sorted.slice().reverse();
+
+    if (array.join() === sorted.join()) {
+        return "yes, ascending";
+    } else if (array.join() === descendArr.join()) {
+        return "yes, descending";
+    } else {
+        return 'no';
+    }
+}
