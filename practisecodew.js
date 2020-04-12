@@ -292,3 +292,9 @@ function duplicateEncode(word) {
     }
     return string;
 }
+
+// remove vowels from string 
+
+function disemvowel(str) {
+    return str.replace(/[aeiou]/ig, '');
+}
