@@ -265,3 +265,9 @@ function sortByLength(array) {
 function reverseLetter(str) {
     return str.replace(/[^a-z]/g, '').split("").reverse().join("")
 }
+
+// split camelCase 
+
+function solution(string) {
+    return string.replace(/([a-zA-Z])(?=[A-Z])/g, '$1 ')
+}
