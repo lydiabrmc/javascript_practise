@@ -298,3 +298,11 @@ function duplicateEncode(word) {
 function disemvowel(str) {
     return str.replace(/[aeiou]/ig, '');
 }
+
+// Greet Me 
+
+var greet = function (name) {
+    const lowName = name.toLowerCase();
+    const capName = lowName.charAt(0).toUpperCase() + lowName.slice(1);
+    return "Hello " + capName + "!";
+};
