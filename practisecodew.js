@@ -168,3 +168,12 @@ function whatday(num) {
     }
     return "Wrong, please enter a number between 1 and 7";
 }
+
+// sum of the first nth term of series
+
+function SeriesSum(n) {
+    for (var s = 0, i = 0; i < n; i++) {
+        s += 1 / (1 + i * 3)
+    }
+    return s.toFixed(2);
+}
