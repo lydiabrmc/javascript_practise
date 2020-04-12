@@ -259,3 +259,9 @@ function sortByLength(array) {
         return a.length - b.length;
     })
 };
+
+//reverse letters 
+
+function reverseLetter(str) {
+    return str.replace(/[^a-z]/g, '').split("").reverse().join("")
+}
