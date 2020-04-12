@@ -177,3 +177,9 @@ function SeriesSum(n) {
     }
     return s.toFixed(2);
 }
+
+// Binary Addition
+
+function addBinary(a, b) {
+    return (a + b).toString(2)
+}
