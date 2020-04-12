@@ -277,3 +277,18 @@ function solution(string) {
 function validate(password) {
     return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{6,}$/.test(password);
 }
+
+// Duplicate Encoder
+
+function duplicateEncode(word) {
+    let string = "";
+    let lowerCase = word.toLowerCase();
+    for (let i = 0; i < lowerCase.length; i++) {
+        if (lowerCase.indexOf(lowerCase[i]) === lowerCase.lastIndexOf(lowerCase[i])) {
+            string += "(";
+        } else {
+            string += ")";
+        }
+    }
+    return string;
+}
