@@ -228,3 +228,13 @@ function printerError(s) {
     errors = s.length - correct;
     return `${errors}/${s.length}`
 }
+
+// get the middle character 
+
+function getMiddle(s) {
+    if (s.length % 2 === 0) {
+        return s[(s.length / 2) - 1] + s[s.length / 2];
+    } else {
+        return s[Math.floor(s.length / 2)];
+    }
+}
