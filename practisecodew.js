@@ -210,3 +210,21 @@ function spinWords(string) {
 function descendingOrder(n) {
     return parseInt(String(n).split('').sort().reverse().join(''))
 }
+
+//printer errors
+
+function printerError(s) {
+    const colours = 'abcdefghijklm';
+    let errors = 0;
+    let correct = 0;
+    for (let i = 0; i < s.length; i++) {
+        for (let j = 0; j < colours.length; j++) {
+            if (colours[j] === s[i]) {
+                correct++;
+            }
+        }
+
+    }
+    errors = s.length - correct;
+    return `${errors}/${s.length}`
+}
