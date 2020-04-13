@@ -314,3 +314,12 @@ function caffeineBuzz(n) {
     if (n % 3 === 0) return "Java";
     return "mocha_missing!";
 }
+
+// square every digit 
+
+function squareDigits(num) {
+    const dig = num.toString().split('');
+    const squared = dig.map(n => n * n);
+    const squareDig = squared.join('')
+    return parseInt(squareDig)
+}
