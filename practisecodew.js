@@ -323,3 +323,15 @@ function squareDigits(num) {
     const squareDig = squared.join('')
     return parseInt(squareDig)
 }
+
+//Isograms
+
+function isIsogram(str) {
+    const string = str.toLowerCase();
+    for (let i = 0; i < string.length; i++) {
+        if (string.indexOf(str[i]) !== string.lastIndexOf(str[i])) {
+            return false
+        }
+    }
+    return true
+}
